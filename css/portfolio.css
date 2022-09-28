@@ -3,11 +3,10 @@
   line-height: 1.63;
   text-align: center;
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--lighter-background-color);
 }
 
 .portfolio-section .button:hover {
-  cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }

@@ -41,7 +41,7 @@
 }
 
 .team-section {
-  background: #f5f4fa;
+  background: var(--lighter-background-color);
 }
 
 .team-section .name {
