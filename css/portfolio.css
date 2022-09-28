@@ -6,7 +6,8 @@
   background-color: var(--lighter-background-color);
 }
 
-.portfolio-section .button:hover {
+.portfolio-section .button:hover,
+.portfolio-section .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
