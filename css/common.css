@@ -32,12 +32,36 @@ body {
   color: var(--accent-color);
 }
 
-.header .link {
-  font-weight: 500;
-  color: var(--title-text-color);
+.link {
   text-decoration: none;
 }
 
+.header .link {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link.active {
+  color: var(--accent-color);
+}
+
+.contacts-nav .link {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.active,
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
