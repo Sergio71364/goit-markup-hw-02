@@ -1,4 +1,12 @@
+.hero-container {
+  width: 696px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .hero {
+  text-align: center;
   background-color: var(--dark-background-color);
 }
 
@@ -10,6 +18,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 30px;
 }
 
 .hero .button {
@@ -17,8 +26,32 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.features-section .list,
+.branches-section .list,
+.team-section .list {
+  display: flex;
+}
+
+.features-section .item {
+  width: calc((100%-90px) / 4);
+}
+
+.features-section .item:not(:last-child),
+.branches-section .item:not(:last-child),
+.team-section .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-section .title {
@@ -26,6 +59,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .features-section .text {
@@ -40,10 +74,20 @@
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .team-section {
   background: var(--lighter-background-color);
+}
+
+.team-section .item {
+  display: block;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-white-color);
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-section .name {
@@ -55,4 +99,12 @@
 
 .team-section .description {
   text-align: center;
+}
+
+.image {
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 10px;
 }

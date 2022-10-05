@@ -1,3 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+li {
+  margin: 0;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -16,12 +41,24 @@ body {
   line-height: 1.19;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
   color: #000000;
+  margin-right: 93px;
 }
 
 .footer .logo {
@@ -37,10 +74,13 @@ body {
 }
 
 .header .link {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link {
@@ -51,14 +91,33 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .list,
+.site-nav,
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-nav .link {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
-
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.header .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header .contacts-nav {
+  margin-left: auto;
+  display: flex;
 }
 
 .active,
@@ -95,6 +154,7 @@ body {
 }
 
 .footer .link {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
@@ -108,5 +168,38 @@ body {
 }
 
 .hidden {
-  color: var(--primary-white-color);
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.no-top-padding {
+  padding-top: 0;
+}
+
+.section.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer .item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
 }
